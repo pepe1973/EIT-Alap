@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="shortcut icon"
+            href="./programming.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="./stilus.css"
+        />
+        <title>Backend - Building CRUD</title>
+    </head>
+    <body>
+        <div id="tarto">
+            <div id="bal-tarto">
+                <div id="korok-tarto">
+                    <div>
+                        <a
+                            class="kor-tarto"
+                            href="./index.html"
+                            title="Backend - Alapbeállítások"
+                            >1</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="kor-tarto"
+                            href="./lap_02.html"
+                            title="Backend - MongoDB adatbázis"
+                            >2</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="kor-tarto active"
+                            href="./lap_03.html"
+                            title="Backend - Building CRUD"
+                            >3</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="kor-tarto"
+                            href="./lap_04.html"
+                            title="Több kép kezelése"
+                            >4</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="kor-tarto"
+                            href="#"
+                            title="Node.js és az aszinkronitás"
+                            >5</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="kor-tarto"
+                            href="#"
+                            title="Node.js http szerver"
+                            >6</a
+                        >
+                    </div>
+                </div>
+                <div id="nyilak-tarto">
+                    <span
+                        ><a href="../index.html"
+                            >Backend - Building CRUD
+                        </a></span
+                    >
+                </div>
+                <div id="feladat-tarto">
+                    <ol>
+                        <li>
+                            Első feladatként hozzunk létre egy új épületet.
+                            Ehhez az előző pontban létrehozott
+                            <span class="kiemel">Building modell</span>-t fogjuk
+                            használni. De először egy kis HTML-EJS és CSS.<span
+                                class="nyil"
+                                >&#129094;</span
+                            >
+                            <a
+                                href="./lap_03/uj_epulet.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                        </li>
+                        <li>
+                            Látható az első feladatnál, hogy egy új épület
+                            létrehozáshoz szükséges egy
+                            <span class="kiemel">building-feltolt.js</span>
+                            állomány is.<span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_03/kerdes_01_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_051.png" />
+                            </div>
+                        </li>
+                        <li>
+                            A routing-olás első lépése a
+                            <span class="kiemel"
+                                >newBuildingControllers.mjs</span
+                            >
+                            állomány létrehozása.<span class="nyil"
+                                >&#129094;</span
+                            >
+                            <a
+                                href="./lap_03/kerdes_02_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_053.png" />
+                            </div>
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_052.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Mivel a képek a
+                            <span class="kiemel">Cloudinary</span> felületen is
+                            elmentésre kerülnek, ezért ezt is meg kell oldani
+                            egy
+                            <span class="kiemel">middleware</span>
+                            segítségével.<span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_03/kerdes_03_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_054.png" />
+                            </div>
+                            A <span class="kiemel">.env</span> állományba a
+                            saját értékek kerüljenek elmentésre.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_055.png" />
+                            </div>
+                        </li>
+                        <li>
+                            A routing-olás második lépése a
+                            <span class="kiemel">newBuildingRoutes.mjs</span>
+                            állomány létrehozása.<span class="nyil"
+                                >&#129094;</span
+                            >
+                            <a
+                                href="./lap_03/kerdes_04_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_057.png" />
+                            </div>
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_056.png" />
+                            </div>
+                            Az <span class="kiemel">app.mjs</span> állományban
+                            szükséges a
+                            <span class="kiemel">newBuildingRouter</span>
+                            meghívása. Ez a harmadik lépés.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_058.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Az adatbázisban lévő épületek megtekintéséhez is
+                            erre a három lépésre van szükség. De előtte ismét
+                            egy kis HTML-EJS és CSS.<span class="nyil"
+                                >&#129094;</span
+                            >
+                            <a
+                                href="./lap_03/epuletek.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                        </li>
+                        <li>
+                            Kezdjük a
+                            <span class="kiemel">buildingsControllers.mjs</span>
+                            állománnyal.<span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_03/kerdes_05_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_062.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Következik a
+                            <span class="kiemel">buildingsRoutes.mjs</span>
+                            állomány.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_063.png" />
+                            </div>
+                            Utolsó lépésként az
+                            <span class="kiemel">app.mjs</span> módosítása.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_064.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Már tudunk létrehozni (CREATE) és lekérni (READ)
+                            épületeket. Most nézzük meg, hogyan tudunk törölni
+                            (DELETE). Láttuk a
+                            <span class="kiemel">buildings.ejs</span>
+                            állománynál, hogy van egy Töröl gomb.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_072.png" />
+                            </div>
+                            Az ehhez tartozó törlő függvény a
+                            <span class="kiemel">building-torol.js</span>
+                            állományban található.
+                            <span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_03/kerdes_06_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_073.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Mikor törlünk egy épületet az adatbázisból, abban az
+                            időben törölni kell a
+                            <span class="kiemel">Cloudinary</span> felületről
+                            is. Ehhez kell újabb
+                            <span class="kiemel">middleware</span>.
+                            <span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_03/kerdes_07_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_075.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Ezután jöhet a
+                            <span class="kiemel">buildingsControllers.mjs</span>
+                            módosítása.<span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_03/kerdes_08_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_074.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Végül jöhet a
+                            <span class="kiemel">buildingsRoutes.mjs</span>
+                            módosítása. Most az
+                            <span class="kiemel">app.mjs</span> nem változik.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_076.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Utoljára maradt a frissítés (UPDATE). Ehhez ismét
+                            kell egy kis HTML-EJS és CSS.<span class="nyil"
+                                >&#129094;</span
+                            >
+                            <a
+                                href="./lap_03/egy_epulet.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                        </li>
+                        <li>
+                            Ismét módosítsuk a
+                            <span class="kiemel">buildingControllers.mjs</span>
+                            állományt.
+                            <span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_03/kerdes_09_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_081.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Majd módosítsuk a
+                            <span class="kiemel">buildingRoutes.mjs</span>
+                            állományt.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_082.png" />
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div id="jobb-tarto">
+                <iframe
+                    name="betolt"
+                    src="./lap_03/uj_epulet.html"
+                ></iframe>
+            </div>
+        </div>
+    </body>
+</html>

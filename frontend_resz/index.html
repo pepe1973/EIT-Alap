@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="shortcut icon"
+            href="./programming.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="./stilus.css"
+        />
+        <title>Backend - Alapbeállítások</title>
+    </head>
+    <body>
+        <div id="tarto">
+            <div id="bal-tarto">
+                <div id="korok-tarto">
+                    <div>
+                        <a
+                            class="kor-tarto active"
+                            href="./index.html"
+                            title="Backend - Alapbeállítások"
+                            >1</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="kor-tarto"
+                            href="./lap_02.html"
+                            title="Backend - MongoDB adatbázis"
+                            >2</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="kor-tarto"
+                            href="./lap_03.html"
+                            title="Backend - Building CRUD"
+                            >3</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="kor-tarto"
+                            href="./lap_04.html"
+                            title="Több kép kezelése"
+                            >4</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="kor-tarto"
+                            href="#"
+                            title="Node.js és az aszinkronitás"
+                            >5</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="kor-tarto"
+                            href="#"
+                            title="Node.js http szerver"
+                            >6</a
+                        >
+                    </div>
+                </div>
+                <div id="nyilak-tarto">
+                    <span
+                        ><a href="../index.html"
+                            >Backend - Alapbeállítások
+                        </a></span
+                    >
+                </div>
+                <div id="feladat-tarto">
+                    <ol>
+                        <li>
+                            Első lépésként hozzunk létre egy
+                            <span class="kiemel">Buildings_project</span> nevű
+                            mappát. Lépjünk bele és alkossuk meg a
+                            <span class="kiemel">backend</span> nevű mappát és
+                            alakítsuk ki benne a következő könyvtárstruktúrát.
+                            <span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_01/kerdes_01_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_001.png" />
+                            </div>
+                        </li>
+                        <li>
+                            A terminálból telepítsük a
+                            <span class="kiemel">Node.js</span> környezetet.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_002.png" />
+                            </div>
+                        </li>
+                        <li>
+                            A terminálból telepítsük a szükséges
+                            <span class="kiemel">npm csomagokat</span>.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_003.png" />
+                            </div>
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_004.png" />
+                            </div>
+                            A telepítés után módosult könyvtárstruktúra.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_005.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Szerkeszük a kapott
+                            <span class="kiemel">package.json</span>
+                            állományt.<span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_01/kerdes_02_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_006.png" />
+                            </div>
+                        </li>
+                        <li>
+                            A <span class="kiemel">utils</span> mappában hozzunk
+                            létre egy <span class="kiemel">app.mjs</span> nevű
+                            állományt az alkalmazásunk működtetéséhez szükséges
+                            kódhoz.<span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_01/kerdes_03_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_007.png" />
+                            </div>
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_008.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Az alkalmazás (API) működtetéséhez, futtatásához
+                            szükséges kód a
+                            <span class="kiemel">server.mjs</span> állományba
+                            kerül.
+                            <span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_01/kerdes_04_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_009.png" />
+                            </div>
+                            Szükséges megadni egy
+                            <span class="kiemel">PORT</span> számot a
+                            <span class="kiemel">.env</span> állományban.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_036.png" />
+                            </div>
+                            Írjuk ki a
+                            <span class="kiemel">.gitignore</span> állományba a
+                            <span class="kiemel">Git</span> által nem követett
+                            mappákat és állományokat.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_037.png" />
+                            </div>
+                            Az indításhoz gépeljük be a terminálba a következő
+                            utasítást.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_010.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Ha jól dolgoztunk, akkor a következőt kell kapnunk a
+                            böngészőben.
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_011.png" />
+                            </div>
+                        </li>
+                        <li>
+                            A következő feladatrész megoldásához szükségünk lesz
+                            egy kis HTML-EJS és CSS kódra.
+                            <span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_01/alap.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                        </li>
+                        <li>
+                            Ahhoz, hogy kapjunk is vissza (GET) valamit, a
+                            következő 3 lépés kell. Első lépésként hozzuk létre
+                            a <span class="kiemel">controllers</span> mappában a
+                            <span class="kiemel">backendcontrollers</span>
+                            mappát és azon belül a
+                            <span class="kiemel">mainControllers.mjs</span>
+                            állományt.
+                            <span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_01/kerdes_05_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_065.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Második lépésként hozzuk létre a
+                            <span class="kiemel">routes</span> mappában a
+                            <span class="kiemel">backendroutes</span>
+                            mappát és azon belül a
+                            <span class="kiemel">mainRoutes.mjs</span>
+                            állományt.
+                            <span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_01/kerdes_06_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_066.png" />
+                            </div>
+                        </li>
+                        <li>
+                            Harmadik lépésként szerkesszük az
+                            <span class="kiemel">app.mjs</span>
+                            állományt.
+                            <span class="nyil">&#129094;</span>
+                            <a
+                                href="./lap_01/kerdes_07_valasz.md.html"
+                                target="betolt"
+                                >Katt ide</a
+                            >
+                            <div class="kep-tarto">
+                                <img src="./kepek/kep_070.png" />
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div id="jobb-tarto">
+                <iframe
+                    name="betolt"
+                    src="./lap_01/kerdes_01_valasz.md.html"
+                ></iframe>
+            </div>
+        </div>
+    </body>
+</html>

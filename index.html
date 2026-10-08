@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="shortcut icon"
+            href="./programming.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="./stilus-alap.css"
+        />
+        <title>Buildings Project</title>
+    </head>
+    <body>
+        <div id="tarto">
+            <h1>Buildings Project</h1>
+            <div id="tartok">
+                <div class="belso-tarto">
+                    <h3>Backend</h3>
+                    <p>
+                        <a href="./backend_resz/index.html">Alapbeállítások</a>
+                    </p>
+                    <!-- <p>
+                        <a href="./Backend_resz/lap_02.html"
+                            >MongoDB adatbázis</a
+                        >
+                    </p>
+                    <p>
+                        <a href="./Backend_resz/lap_03.html">Building CRUD</a>
+                    </p> -->
+                </div>
+                <div class="belso-tarto">
+                    <h3>Frontend</h3>
+                    <p>
+                        <a href="./frontend_resz/index.html">Alapbeállítások</a>
+                    </p>
+                </div>
+                <div class="belso-tarto">
+                    <h3>Mobil alkalmazás</h3>
+                </div>
+                <div class="belso-tarto">
+                    <h3>Asztali alkalmazás (konzol)</h3>
+                </div>
+                <div class="belso-tarto">
+                    <h3>Asztali alkalmazás (winform)</h3>
+                </div>
+            </div>
+        </div>
+        <script>
+            let kekGomb = document.querySelectorAll('.kek-gomb');
+            let pinkGomb = document.querySelectorAll('.pink-gomb');
+            let lenyilo = document.querySelectorAll('.lenyilo');
+
+            for (let i = 0; i < kekGomb.length; i++) {
+                kekGomb[i].addEventListener('click', () => {
+                    kekGomb[i].style.display = 'none';
+                    pinkGomb[i].style.display = 'inline-block';
+                    lenyilo[i].style.display = 'block';
+                });
+                pinkGomb[i].addEventListener('click', () => {
+                    kekGomb[i].style.display = 'inline-block';
+                    pinkGomb[i].style.display = 'none';
+                    lenyilo[i].style.display = 'none';
+                });
+            }
+        </script>
+    </body>
+</html>

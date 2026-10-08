@@ -1,0 +1,25 @@
+#korok-tarto {
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.kor-tarto {
+    align-items: center;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    font-size: larger;
+    font-weight: bold;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+}
+
+.active {
+    background-color: red;
+}

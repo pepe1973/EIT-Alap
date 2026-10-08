@@ -1,0 +1,34 @@
+Kérem a következő word dokumentum nyers markdown formátumba történő alakítását, a következők figyelembevételével:
+- a nagyobb szövegek legyenek fejléc elemek
+- a pirossal kiemelt szövegrészek legyenek szintén kiemelve
+- a képeket nem kell beszúrni, csak a tartalmukat kérem megjeleníteni kód, vagy grafika formájában, a fájl elérési útvonala nem kell a kép tetején
+- kérem a képek kódtartalmának rövid elemzését
+- a kód megjelenítésekor a szükségtelen sortöréseket, amit a Prettier okoz, kérem eltüntetni, és lehetőség szerint minden utasítást egy sorban kiírni. Tipikus példák: 
+- html attribútumok több sorba törése  
+- html tag-ek darabolása
+
+{
+  nev: 'Big Ben',
+  leiras: 'A Big Ben a brit parlament épületének, a londoni Westminster-palota toronyórájának harangja, illetve az óraszerkezet neve. Az épület keleti szárnyának végén, egy óratoronyban található. Ismert az óra pontosságáról és a 13,5 tonnás harangról. Az óratorony világszerte London, sőt egész Anglia közismert, általános jelképe.',
+  kepek: [
+    'http://res.cloudinary.com/petruszka/image/upload/v1790921940/wvn7gkigpbhiljabfsve.jpg',
+    'http://res.cloudinary.com/petruszka/image/upload/v1790921940/sm4gterw0ajej8layyfe.jpg',
+    'http://res.cloudinary.com/petruszka/image/upload/v1790921941/kf2vucjmyxtik8ukvhhc.jpg'
+  ],
+  createdAt: ISODate('2026-10-02T06:19:01.522Z'),
+  updatedAt: ISODate('2026-10-02T06:19:01.522Z'),
+  __v: NumberInt('0')
+}
+
+{
+  nev: 'Colosseum',
+  leiras: 'A Colosseum az ókori Róma hatalmas amfiteátruma volt, ma pedig nevezetes látványossága a városnak; 2010 júliusától már a föld alatti része is bejárható.[',
+  kepek: [
+    'http://res.cloudinary.com/petruszka/image/upload/v1791117188/docbjpi6avazknf22heo.jpg',
+    'http://res.cloudinary.com/petruszka/image/upload/v1791117188/tuzosww5dirxtjpnfsmg.jpg',
+    'http://res.cloudinary.com/petruszka/image/upload/v1791117189/twvty5xc0lfbbcb75q5o.jpg'
+  ],
+  createdAt: ISODate('2026-10-04T12:29:15.051Z'),
+  updatedAt: ISODate('2026-10-04T12:33:11.230Z'),
+  __v: NumberInt('0')
+}

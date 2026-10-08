@@ -1,0 +1,30 @@
+@import url('./valtozok.css');
+
+body {
+    font-family: var(--rubik);
+}
+
+#tarto {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 1em auto;
+    width: 80%;
+}
+
+#tartok {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.belso-tarto {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.belso-tarto a {
+    color: blue;
+    text-decoration: none;
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-style="technical" data-wrap-code="on" style="--mdv-content-max: 1750px;">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>kerdes_07_valasz.md</title>
+<style>
+:root{--mdv-space-1: 4px;--mdv-space-2: 8px;--mdv-space-3: 12px;--mdv-space-4: 16px;--mdv-space-5: 20px;--mdv-space-6: 24px;--mdv-space-8: 32px;--mdv-font-sans: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", "Heiti SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK JP", "Noto Sans CJK KR", "PingFang SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";--mdv-font-serif: "Iowan Old Style", "Palatino Linotype", palatino, "URW Palladio L", georgia, cambria, serif, "Songti SC", simsun, stsong, "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK SC", "Noto Serif CJK JP";--mdv-font-mono: ui-monospace, sfmono-regular, "SF Mono", menlo, consolas, "Liberation Mono", "Courier New", monospace, "Noto Sans Mono CJK SC", fangsong, stfangsong;--mdv-font-body: var(--mdv-font-sans);--mdv-font-heading: var(--mdv-font-sans);--mdv-font-code: var(--mdv-font-mono);--mdv-radius-sm: 4px;--mdv-radius-md: 6px;--mdv-radius-lg: 12px;--mdv-radius-pill: 999px;--mdv-duration-fast: .12s}:root,:root[data-theme=light]{--mdv-color-bg: #fff;--mdv-color-text: #1f2937;--mdv-color-text-muted: #4b5563;--mdv-color-surface: #f3f4f6;--mdv-color-surface-hover: #e5e7eb;--mdv-color-border: #e5e7eb;--mdv-color-code-inline-bg: #e4e7eb;--mdv-color-table-stripe: #f8f9fa;--mdv-color-menu-bg: #f3f4f6;--mdv-color-icon: #dadee3;--mdv-color-icon-active: #bcc2cb;--mdv-color-icon-bg: #f4f5f6;--mdv-color-icon-bg-active: color-mix(in srgb, #f4f5f6 78%, transparent);--mdv-color-toc-bg: #f3f4f6;--mdv-color-accent: #3949ab;--mdv-color-accent-hover: #303f9f;--mdv-color-accent-contrast: #fff;--mdv-color-accent-soft: #e8eaf6;--mdv-color-danger: #dc2626;--mdv-color-danger-contrast: #fff;--mdv-color-focus-ring: #3949ab;--mdv-color-mark-bg: rgb(255 240 138 / .7);--mdv-color-warning-bg: #fff7ed;--mdv-color-warning-border: #f59e0b;--mdv-color-info-bg: #e8eaf6;--mdv-color-info-border: #3949ab;--mdv-color-tip-bg: #ecfdf5;--mdv-color-tip-border: #10b981;--mdv-color-danger-bg: #fef2f2;--mdv-color-note-bg: #f3f4f6}@media screen{:root[data-theme=dark]{--mdv-color-bg: #101013;--mdv-color-toc-bg: #06080a;--mdv-color-text: #e5e7eb;--mdv-color-text-muted: #9ca3af;--mdv-color-surface: #262626;--mdv-color-surface-hover: #3f3f46;--mdv-color-border: #3f3f46;--mdv-color-code-inline-bg: #3a3a42;--mdv-color-table-stripe: #262626;--mdv-color-menu-bg: #1e1e1e;--mdv-color-icon: #4b5563;--mdv-color-icon-active: #6b7280;--mdv-color-icon-bg: #2a2a30;--mdv-color-icon-bg-active: color-mix(in srgb, #2a2a30 78%, transparent);--mdv-color-accent: #7986cb;--mdv-color-accent-hover: #9fa8da;--mdv-color-accent-contrast: #1e1e1e;--mdv-color-accent-soft: #2c2f4a;--mdv-color-danger: #ef4444;--mdv-color-danger-contrast: #000;--mdv-color-focus-ring: #9fa8da;--mdv-color-mark-bg: rgb(250 204 21 / .35);--mdv-color-warning-bg: #3a2e15;--mdv-color-warning-border: #d97706;--mdv-color-info-bg: #252b48;--mdv-color-info-border: #7986cb;--mdv-color-tip-bg: #15331f;--mdv-color-tip-border: #34d399;--mdv-color-danger-bg: #4a1c1c;--mdv-color-note-bg: #26262e}}
+:root,:root[data-theme=light]{--mdv-syntax-comment: slategray;--mdv-syntax-punctuation: #999;--mdv-syntax-keyword: #07a;--mdv-syntax-string: #690;--mdv-syntax-number: #905;--mdv-syntax-function: #dd4a68;--mdv-syntax-class-name: #dd4a68;--mdv-syntax-tag: #905;--mdv-syntax-attr-name: #690;--mdv-syntax-attr-value: #07a;--mdv-syntax-operator: #9a6e3a;--mdv-syntax-variable: #e90;--mdv-syntax-property: #905;--mdv-syntax-builtin: #690;--mdv-syntax-regex: #e90;--mdv-syntax-deleted: #905;--mdv-syntax-inserted: #690}@media screen{:root[data-theme=dark]{--mdv-syntax-comment: hsl(30deg 20% 50%);--mdv-syntax-punctuation: inherit;--mdv-syntax-keyword: hsl(350deg 40% 70%);--mdv-syntax-string: hsl(75deg 70% 60%);--mdv-syntax-number: hsl(350deg 40% 70%);--mdv-syntax-function: inherit;--mdv-syntax-class-name: inherit;--mdv-syntax-tag: hsl(350deg 40% 70%);--mdv-syntax-attr-name: hsl(75deg 70% 60%);--mdv-syntax-attr-value: hsl(350deg 40% 70%);--mdv-syntax-operator: hsl(40deg 90% 60%);--mdv-syntax-variable: hsl(40deg 90% 60%);--mdv-syntax-property: hsl(350deg 40% 70%);--mdv-syntax-builtin: hsl(75deg 70% 60%);--mdv-syntax-regex: #e90;--mdv-syntax-deleted: red;--mdv-syntax-inserted: hsl(75deg 70% 60%)}}.mdv-root .token.comment,.mdv-root .token.prolog,.mdv-root .token.doctype,.mdv-root .token.cdata{font-style:italic;color:var(--mdv-syntax-comment)}.mdv-root .token.punctuation{color:var(--mdv-syntax-punctuation)}.mdv-root .token.namespace{opacity:.7}.mdv-root .token.property,.mdv-root .token.symbol{color:var(--mdv-syntax-property)}.mdv-root .token.boolean,.mdv-root .token.number,.mdv-root .token.constant{color:var(--mdv-syntax-number)}.mdv-root .token.selector,.mdv-root .token.string,.mdv-root .token.char,.mdv-root .token.attr-value{color:var(--mdv-syntax-string)}.mdv-root .token.atrule,.mdv-root .token.keyword,.mdv-root .token.important{color:var(--mdv-syntax-keyword)}.mdv-root .token.operator,.mdv-root .token.entity{color:var(--mdv-syntax-operator)}.mdv-root .token.url{color:var(--mdv-syntax-string)}.mdv-root .token.builtin{color:var(--mdv-syntax-builtin)}.mdv-root .token.function{color:var(--mdv-syntax-function)}.mdv-root .token.class-name{color:var(--mdv-syntax-class-name)}.mdv-root .token.regex{color:var(--mdv-syntax-regex)}.mdv-root .token.tag{color:var(--mdv-syntax-tag)}.mdv-root .token.attr-name{color:var(--mdv-syntax-attr-name)}.mdv-root .token.variable{color:var(--mdv-syntax-variable)}.mdv-root .token.deleted{color:var(--mdv-syntax-deleted)}.mdv-root .token.inserted{color:var(--mdv-syntax-inserted)}.mdv-root .token.important,.mdv-root .token.bold{font-weight:700}.mdv-root .token.italic{font-style:italic}
+:root[data-style=business]{--mdv-font-body: "Aptos", "Calibri", "Helvetica Neue", helvetica, arial, system-ui, "Heiti SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Apple SD Gothic Neo", "PingFang SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";--mdv-font-heading: "Aptos Display", "Aptos", "Calibri", "Helvetica Neue", helvetica, arial, system-ui, "Heiti SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Apple SD Gothic Neo", "PingFang SC", sans-serif;--mdv-font-code: var(--mdv-font-mono)}:root[data-style=technical]{--mdv-font-body: var(--mdv-font-sans);--mdv-font-heading: var(--mdv-font-sans);--mdv-font-code: var(--mdv-font-mono)}:root[data-style=academic]{--mdv-font-body: "Charter", "Bitstream Charter", "Sitka Text", cambria, "Liberation Serif", georgia, serif, "Songti SC", simsun, stsong, "Hiragino Mincho ProN", "Noto Serif CJK SC";--mdv-font-heading: "Charter", "Bitstream Charter", "Sitka Text", cambria, "Liberation Serif", georgia, serif, "Songti SC", simsun, stsong, "Hiragino Mincho ProN", "Noto Serif CJK SC";--mdv-font-code: var(--mdv-font-mono)}:root[data-style=palatino]{--mdv-font-body: "Palatino", "Palatino Linotype", "Book Antiqua", "URW Palladio L", georgia, serif, "Songti SC", simsun, stsong, "Hiragino Mincho ProN", "Noto Serif CJK SC";--mdv-font-heading: "Palatino", "Palatino Linotype", "Book Antiqua", "URW Palladio L", georgia, serif, "Songti SC", simsun, stsong, "Hiragino Mincho ProN", "Noto Serif CJK SC";--mdv-font-code: var(--mdv-font-mono)}:root[data-style=heiti]{--mdv-font-body: "Heiti SC", "黑体", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC", sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";--mdv-font-heading: "Heiti SC", "黑体", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC", sans-serif, system-ui;--mdv-font-code: var(--mdv-font-mono)}:root[data-style=mixed]{--mdv-font-body: -apple-system, blinkmacsystemfont, "Segoe UI", helvetica, arial, "Heiti SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "Noto Sans CJK SC", "PingFang SC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";--mdv-font-heading: -apple-system, blinkmacsystemfont, "Segoe UI", helvetica, arial, "Heiti SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "Noto Sans CJK SC", "PingFang SC", sans-serif;--mdv-font-code: var(--mdv-font-mono)}:root[data-style=typewriter]{--mdv-font-body: "Courier Prime", "American Typewriter", "Courier New", courier, var(--mdv-font-mono), "Heiti SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Apple SD Gothic Neo", "PingFang SC";--mdv-font-heading: "Courier Prime", "American Typewriter", "Courier New", courier, var(--mdv-font-mono), "Heiti SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Apple SD Gothic Neo", "PingFang SC";--mdv-font-code: var(--mdv-font-mono)}:root[data-style=handwritten]{--mdv-font-body: "Caveat", "Bradley Hand", "Segoe Script", "Ink Free", "Marker Felt", "Comic Sans MS", cursive, "Heiti SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Apple SD Gothic Neo", "PingFang SC";--mdv-font-heading: "Caveat", "Bradley Hand", "Segoe Script", "Ink Free", "Marker Felt", "Comic Sans MS", cursive, "Heiti SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Apple SD Gothic Neo", "PingFang SC";--mdv-font-code: var(--mdv-font-mono)}
+html,body{margin:0;background-color:var(--mdv-color-bg)}html{--mdv-toc-width: 0;--mdv-gutter-left-offset: 0;--mdv-content-max: 800px}.mdv-root{box-sizing:border-box;margin-block:0;font-family:var(--mdv-font-body);font-size:calc(16px * var(--mdv-zoom, 1));line-height:1.6;color:var(--mdv-color-text);background-color:var(--mdv-color-bg)}.mdv-root .mdv-content{inline-size:min(100%,var(--mdv-content-max, 800px));margin-inline:auto;padding-block:2rem;padding-inline:1.5rem}.mdv-root *:not(:where(pre.mermaid *)),.mdv-root *:not(:where(pre.mermaid *)):before,.mdv-root *:not(:where(pre.mermaid *)):after{box-sizing:inherit}.mdv-root h1:not(:where(pre.mermaid *)),.mdv-root h2:not(:where(pre.mermaid *)),.mdv-root h3:not(:where(pre.mermaid *)),.mdv-root h4:not(:where(pre.mermaid *)),.mdv-root h5:not(:where(pre.mermaid *)),.mdv-root h6:not(:where(pre.mermaid *)){position:relative;margin-block:1.5em .5em;font-family:var(--mdv-font-heading);font-weight:600;line-height:1.25}.mdv-root h1:not(:where(pre.mermaid *)){font-size:2em}.mdv-root h2:not(:where(pre.mermaid *)){padding-block-end:.3em;font-size:1.5em;border-block-end:1px solid var(--mdv-color-border)}.mdv-root h3:not(:where(pre.mermaid *)){font-size:1.25em}.mdv-root h4:not(:where(pre.mermaid *)){font-size:1em}.mdv-root h5:not(:where(pre.mermaid *)){font-size:.875em}.mdv-root h6:not(:where(pre.mermaid *)){font-size:.85em;color:var(--mdv-color-text-muted)}.mdv-root p:not(:where(pre.mermaid *)),.mdv-root ul:not(:where(pre.mermaid *)),.mdv-root ol:not(:where(pre.mermaid *)),.mdv-root blockquote:not(:where(pre.mermaid *)){margin-block:0 1em}.mdv-root ul:not(:where(pre.mermaid *)),.mdv-root ol:not(:where(pre.mermaid *)){padding-inline-start:2em}.mdv-root li:not(:where(pre.mermaid *))+li:not(:where(pre.mermaid *)){margin-block-start:.25em}.mdv-root ol:not(:where(pre.mermaid *)) ol:not(:where(pre.mermaid *)){list-style-type:lower-roman}.mdv-root ol:not(:where(pre.mermaid *)) ol:not(:where(pre.mermaid *)) ol:not(:where(pre.mermaid *)){list-style-type:lower-alpha}.mdv-root blockquote:not(:where(pre.mermaid *)){margin-inline-start:0;padding-inline-start:1em;color:var(--mdv-color-text-muted);border-inline-start:.25em solid var(--mdv-color-border)}.mdv-root a:not(:where(pre.mermaid *)){color:var(--mdv-color-accent);text-decoration:none}.mdv-root a:not(:where(pre.mermaid *)):hover{text-decoration:underline}.mdv-root code:not(:where(pre.mermaid *)){padding-block:.2em;padding-inline:.4em;font-family:var(--mdv-font-code);font-size:85%;background-color:var(--mdv-color-code-inline-bg);border-radius:var(--mdv-radius-md)}.mdv-root pre:not(:where(pre.mermaid *)){position:relative;overflow:auto;padding-block:1em;padding-inline:1em;font-family:var(--mdv-font-code);font-size:85%;line-height:1.45;background-color:var(--mdv-color-surface);border-radius:var(--mdv-radius-md)}.mdv-root .mdv-code-block>pre:not(:where(pre.mermaid *)){padding-block-start:2em}.mdv-root pre:not(:where(pre.mermaid *)) code:not(:where(pre.mermaid *)){padding:0;font-size:100%;white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal;background-color:transparent;border-radius:0}.mdv-root .mdv-code-block{position:relative;display:block}.mdv-root ol+.mdv-code-block:has(+ol),.mdv-root ol+.mdv-code-block:has(+ul),.mdv-root ul+.mdv-code-block:has(+ol),.mdv-root ul+.mdv-code-block:has(+ul),.mdv-root ol+pre:not(.mermaid):has(+ol),.mdv-root ol+pre:not(.mermaid):has(+ul),.mdv-root ul+pre:not(.mermaid):has(+ol),.mdv-root ul+pre:not(.mermaid):has(+ul){margin-inline-start:2em}.mdv-root .mdv-code-block[data-lang]:before{position:absolute;z-index:1;inset-block-start:.5em;inset-inline-end:.5em;content:attr(data-lang);pointer-events:none;font-family:var(--mdv-font-sans);font-size:11px;font-weight:500;line-height:1;color:var(--mdv-color-text-muted);letter-spacing:.02em;text-transform:none}.mdv-root .mdv-code-block>.mdv-code-copy{position:absolute;inset-block-end:.5em;inset-inline-end:.5em;display:inline-flex;align-items:center;justify-content:center;inline-size:28px;block-size:28px;padding:0;color:var(--mdv-color-text-muted);cursor:pointer;background-color:var(--mdv-color-bg);border:1px solid var(--mdv-color-border);border-radius:var(--mdv-radius-md);opacity:0;transition:opacity var(--mdv-duration-fast) ease,color var(--mdv-duration-fast) ease,background-color var(--mdv-duration-fast) ease}.mdv-root .mdv-code-block:hover>.mdv-code-copy,.mdv-root .mdv-code-block>.mdv-code-copy:focus-visible{opacity:1}.mdv-root .mdv-code-block>.mdv-code-copy:hover{color:var(--mdv-color-text);background-color:var(--mdv-color-surface-hover)}.mdv-root .mdv-code-block>.mdv-code-copy:focus-visible{outline:2px solid var(--mdv-color-focus-ring);outline-offset:2px}.mdv-root .mdv-code-block>.mdv-code-copy.is-copied{color:var(--mdv-color-accent);border-color:var(--mdv-color-accent)}.mdv-root .mdv-code-block>.mdv-code-copy.is-failed{color:var(--mdv-color-danger);border-color:var(--mdv-color-danger)}.mdv-root .mdv-code-block>.mdv-code-copy svg{display:block}@media (hover: none){.mdv-root .mdv-code-block>.mdv-code-copy{opacity:1}}[data-wrap-code=off] .mdv-root pre:not(:where(pre.mermaid *)) code:not(:where(pre.mermaid *)){white-space:pre;overflow-wrap:normal;word-break:normal}.mdv-root table:not(:where(pre.mermaid *)){display:block;overflow:auto;margin-block-end:1em;border-collapse:collapse;border-spacing:0}.mdv-root table:not(:where(pre.mermaid *)) th:not(:where(pre.mermaid *)),.mdv-root table:not(:where(pre.mermaid *)) td:not(:where(pre.mermaid *)){padding-block:.4em;padding-inline:.75em;border:1px solid var(--mdv-color-border)}.mdv-root table:not(:where(pre.mermaid *)) th:not(:where(pre.mermaid *)){font-weight:600}.mdv-root tbody:not(:where(pre.mermaid *)) tr:not(:where(pre.mermaid *)):nth-child(2n){background-color:var(--mdv-color-table-stripe)}.mdv-root hr:not(:where(pre.mermaid *)){block-size:1px;margin-block:1.5em;background-color:var(--mdv-color-border);border:0}.mdv-root img:not(:where(pre.mermaid *)){max-inline-size:100%;block-size:auto}.mdv-root svg.mdv-inline-svg{max-inline-size:100%;block-size:auto}.mdv-root .mdv-broken-image{display:inline-flex;flex-direction:column;gap:var(--mdv-space-1);align-items:center;max-inline-size:100%;padding-block:var(--mdv-space-3);padding-inline:var(--mdv-space-4);font-family:var(--mdv-font-sans);color:var(--mdv-color-text-muted);text-align:center;vertical-align:middle;background-color:var(--mdv-color-surface);border:1px dashed var(--mdv-color-border);border-radius:var(--mdv-radius-md)}.mdv-root .mdv-broken-image__icon{display:inline-flex;color:var(--mdv-color-text-muted)}.mdv-root .mdv-broken-image__label{font-size:.85em;font-weight:600}.mdv-root .mdv-broken-image__alt{font-size:.85em;font-style:italic}.mdv-root .mdv-broken-image__url{max-inline-size:100%;overflow-wrap:anywhere;font-family:var(--mdv-font-code, monospace);font-size:.75em;opacity:.85}.mdv-root .mdv-heading-anchor{position:absolute;inset-inline-end:100%;display:inline-block;padding-inline-end:.25em;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;line-height:inherit;color:#e5e7eb;text-decoration:none;vertical-align:baseline;background:transparent;opacity:0;transition:opacity var(--mdv-duration-fast) ease}.mdv-root .mdv-heading-anchor:hover{opacity:1}.mdv-root .mdv-heading-anchor:hover,.mdv-root .mdv-heading-anchor:focus,.mdv-root .mdv-heading-anchor:active,.mdv-root .mdv-heading-anchor:visited{color:#e5e7eb;text-decoration:none;background:transparent;outline:none}.mdv-root .mdv-heading-anchor:focus-visible{outline:2px solid var(--mdv-color-focus-ring);outline-offset:2px}[data-theme=dark] .mdv-root .mdv-heading-anchor{color:#3f3f46}.mdv-root h1:hover .mdv-heading-anchor,.mdv-root h2:hover .mdv-heading-anchor,.mdv-root h3:hover .mdv-heading-anchor,.mdv-root h4:hover .mdv-heading-anchor,.mdv-root h5:hover .mdv-heading-anchor,.mdv-root h6:hover .mdv-heading-anchor{opacity:1}[data-theme=dark] .mdv-root .mdv-heading-anchor:hover,[data-theme=dark] .mdv-root .mdv-heading-anchor:focus,[data-theme=dark] .mdv-root .mdv-heading-anchor:active,[data-theme=dark] .mdv-root .mdv-heading-anchor:visited{color:#3f3f46}.mdv-root .md-task-list-item{list-style:none;padding-inline-start:0;margin-inline-start:-1.25em}.mdv-root .md-task-marker{display:inline-block;inline-size:14px;block-size:14px;margin-inline-end:.5em;vertical-align:-2px;background-color:transparent;border:1px solid var(--mdv-color-border);border-radius:3px}.mdv-root .md-task-marker--checked{position:relative;background-color:var(--mdv-color-accent);border-color:var(--mdv-color-accent)}.mdv-root .md-task-marker--checked:after{position:absolute;inset-block-start:1px;inset-inline-start:4px;inline-size:4px;block-size:8px;content:"";border-block-end:2px solid var(--mdv-color-accent-contrast);border-inline-end:2px solid var(--mdv-color-accent-contrast);transform:rotate(45deg)}.mdv-root mark:not(:where(pre.mermaid *)){padding-inline:.15em;color:inherit;background-color:var(--mdv-color-mark-bg);border-radius:2px}.mdv-root ins:not(:where(pre.mermaid *)){text-decoration:underline;text-decoration-color:currentcolor}.mdv-root kbd:not(:where(pre.mermaid *)){padding-block:.1em;padding-inline:.4em;font-family:var(--mdv-font-code);font-size:.85em;background-color:var(--mdv-color-surface);border:1px solid var(--mdv-color-border);border-radius:3px}.mdv-root sub:not(:where(pre.mermaid *)),.mdv-root sup:not(:where(pre.mermaid *)){font-size:.75em;line-height:0}.mdv-root sub:not(:where(pre.mermaid *)){vertical-align:sub}.mdv-root sup:not(:where(pre.mermaid *)){vertical-align:super}.mdv-root abbr:not(:where(pre.mermaid *))[title]{cursor:help;text-decoration:underline dotted}.mdv-root dl:not(:where(pre.mermaid *)){margin-block:0 1em}.mdv-root dt:not(:where(pre.mermaid *)){margin-block-start:.5em;font-weight:600}.mdv-root dd:not(:where(pre.mermaid *)){margin-block-start:.25em;margin-inline-start:1.5em}.mdv-root details:not(:where(pre.mermaid *)){margin-block:1em}.mdv-root summary:not(:where(pre.mermaid *)){font-weight:600;cursor:pointer}.mdv-root .footnotes{padding-block-start:1em;margin-block-start:2em;font-size:.9em;color:var(--mdv-color-text-muted);border-block-start:1px solid var(--mdv-color-border)}.mdv-root .footnotes-sep{display:none}.mdv-root .footnotes-list{padding-inline-start:0;margin-block:0;list-style:none}.mdv-root .footnote-item{padding-inline-start:0}.mdv-root .footnote-item>p:not(:where(pre.mermaid *)){margin-block:0 .5em}.mdv-root .footnote-backref{color:var(--mdv-color-accent);text-decoration:none}.mdv-root .footnote-backref:hover{text-decoration:none}.mdv-root .md-container{padding-block:.5em;padding-inline:1.25em;margin-block:1em;border-inline-start:4px solid var(--mdv-color-border);border-radius:var(--mdv-radius-md)}.mdv-root .md-container>:first-child{margin-block-start:0}.mdv-root .md-container>:last-child{margin-block-end:0}.mdv-root .md-container:before{display:inline-flex;margin-inline-end:.4em;font-weight:600}.mdv-root .md-container__title{display:inline-block;margin:0 0 .5em;font-weight:600}.mdv-root .md-container:not(:has(.md-container__title))>:first-child{margin-block-start:.5em}.mdv-root .md-container--warning{background-color:var(--mdv-color-warning-bg);border-inline-start-color:var(--mdv-color-warning-border)}.mdv-root .md-container--warning:before{content:"⚠️"}.mdv-root .md-container--info{background-color:var(--mdv-color-info-bg);border-inline-start-color:var(--mdv-color-info-border)}.mdv-root .md-container--info:before{content:"ℹ️"}.mdv-root .md-container--tip{background-color:var(--mdv-color-tip-bg);border-inline-start-color:var(--mdv-color-tip-border)}.mdv-root .md-container--tip:before{content:"💡"}.mdv-root .md-container--danger{background-color:var(--mdv-color-danger-bg);border-inline-start-color:var(--mdv-color-danger)}.mdv-root .md-container--danger:before{content:"🚨"}.mdv-root .md-container--note{background-color:var(--mdv-color-note-bg);border-inline-start-color:var(--mdv-color-text-muted)}.mdv-root .md-container--note:before{content:"📝"}.mdv-root .mdv-frontmatter>summary:not(:where(pre.mermaid *)){font-weight:400}.mdv-root .mdv-footnote-highlight{padding-block:4px;padding-inline:8px;margin-block:-4px;margin-inline:-8px;border-radius:var(--mdv-radius-md);box-shadow:0 0 0 2px var(--mdv-color-accent);transition:box-shadow var(--mdv-duration-fast) ease}
+.mdv-root *:not(pre.mermaid *){box-sizing:border-box}.mdv-root pre.mermaid[data-processed=true]{margin-block:1.5rem;padding:0;font-family:initial;line-height:initial;letter-spacing:initial;text-align:center;background:none;cursor:zoom-in}.mdv-root pre.mermaid[data-processed=true] svg{display:block;max-inline-size:100%;block-size:auto;margin-inline:auto}.mdv-root .mdv-mermaid-error{margin-block:.5em 0;padding-block:1em;padding-inline:1em;font-family:var(--mdv-font-body);text-align:start;background-color:var(--mdv-color-danger-bg, rgb(255 103 103 / .08));border:1px solid var(--mdv-color-danger, #ff6767);border-radius:var(--mdv-radius-md, 6px);cursor:default}.mdv-root .mdv-mermaid-error pre{margin-block:.5em 0;padding:0;font-family:var(--mdv-font-code, monospace);font-size:.85em;white-space:pre-wrap;background:none}
+.mdv-root pre.mdv-graphviz[data-processed=true]{margin-block:1.5rem;padding:0;font-family:initial;line-height:initial;letter-spacing:initial;text-align:center;background:none;cursor:zoom-in}.mdv-root pre.mdv-graphviz[data-processed=true] svg{display:block;max-inline-size:100%;block-size:auto;margin-inline:auto}.mdv-root .mdv-graphviz-error{margin-block:.5em 0;padding-block:1em;padding-inline:1em;font-family:var(--mdv-font-body);text-align:start;background-color:var(--mdv-color-danger-bg, rgb(255 103 103 / .08));border:1px solid var(--mdv-color-danger, #ff6767);border-radius:var(--mdv-radius-md, 6px);cursor:default}.mdv-root .mdv-graphviz-error pre{margin-block:.5em 0;padding:0;font-family:var(--mdv-font-code, monospace);font-size:.85em;white-space:pre-wrap;background:none}
+.mdv-root pre.mdv-vega[data-processed=true],.mdv-root pre.mdv-vega-lite[data-processed=true]{margin-block:1.5rem;padding:0;font-family:initial;line-height:initial;letter-spacing:initial;text-align:center;background:none;cursor:zoom-in}.mdv-root pre.mdv-vega[data-processed=true] svg,.mdv-root pre.mdv-vega-lite[data-processed=true] svg{display:block;max-inline-size:100%;block-size:auto;margin-inline:auto}.mdv-root .mdv-vega-error,.mdv-root .mdv-vega-lite-error{margin-block:.5em 0;padding-block:1em;padding-inline:1em;font-family:var(--mdv-font-body);text-align:start;background-color:var(--mdv-color-danger-bg, rgb(255 103 103 / .08));border:1px solid var(--mdv-color-danger, #ff6767);border-radius:var(--mdv-radius-md, 6px);cursor:default}.mdv-root .mdv-vega-error pre,.mdv-root .mdv-vega-lite-error pre{margin-block:.5em 0;padding:0;font-family:var(--mdv-font-code, monospace);font-size:.85em;white-space:pre-wrap;background:none}
+.mdv-root span.mdv-math-inline{display:inline-block;overflow:visible;color:var(--mdv-color-text);padding-inline-end:.3em;font-family:var(--mdv-font-code, monospace)}.mdv-root span.mdv-math-inline[data-processed=true]{font-family:inherit}.mdv-root pre.mdv-math-block{display:block;margin-block:1.5rem;padding:0;padding-inline-end:.5em;overflow:visible;font-family:var(--mdv-font-code, monospace);font-size:1.1em;line-height:1.4;color:var(--mdv-color-text);text-align:center;background:none}.mdv-root pre.mdv-math-block[data-processed=true]{font-family:inherit;cursor:zoom-in}.mdv-root div.mdv-math-mathml{display:block;margin-block:1.5rem;overflow:visible;font-size:1.1em;color:var(--mdv-color-text);text-align:center}.mdv-root div.mdv-math-mathml[data-processed=true]{cursor:zoom-in}.mdv-root span.mdv-math-inline svg{display:inline-block;max-inline-size:100%;block-size:auto;overflow:visible}.mdv-root pre.mdv-math-block svg,.mdv-root div.mdv-math-mathml svg{display:block;max-inline-size:100%;block-size:auto;margin-inline:auto}.mdv-root mjx-container{overflow:visible;font-family:inherit;color:inherit}.mdv-root mjx-container[display=true]{display:block;margin-inline:auto}.mdv-root span.mdv-math-inline:empty,.mdv-root pre.mdv-math-block:empty,.mdv-root div.mdv-math-mathml:empty{display:none}.mdv-root .mdv-math-error{margin-block:.5em 0;padding-block:1em;padding-inline:1em;font-family:var(--mdv-font-body);text-align:start;background-color:var(--mdv-color-danger-bg, rgb(255 103 103 / .08));border:1px solid var(--mdv-color-danger, #ff6767);border-radius:var(--mdv-radius-md, 6px);cursor:default}.mdv-root .mdv-math-error pre{margin-block:.5em 0;padding:0;font-family:var(--mdv-font-code, monospace);font-size:.85em;white-space:pre-wrap;background:none}
+@media print{@page{size:a4 portrait}.viewer,.viewer.has-sidebar{display:block;padding-inline:0!important;padding-block:0!important;min-block-size:0;--mdv-toc-width: 0 !important;--mdv-gutter-left-offset: 0 !important}.viewer>*:not(#mdv-root){display:none!important}.gutter,.toolbar,.menu,.submenu,.overlay,.toc,nav.toc,.resize-handle,.anchor{display:none!important}.mdv-heading-anchor,.mdv-code-copy{display:none!important}.mdv-root,#mdv-root{inline-size:auto}.mdv-content{--mdv-content-max: none;inline-size:100%!important;max-inline-size:none!important;margin-inline:0!important}}
+
+/* I-25 export-only: click-to-zoom неработоспособен в самодостаточном файле
+   (нет SW/JS), поэтому возвращаем диаграммам/формулам обычный курсор. */
+.mdv-root .mdv-mermaid[data-processed='true'],
+.mdv-root pre.mermaid[data-processed='true'],
+.mdv-root pre.mdv-graphviz[data-processed='true'],
+.mdv-root pre.mdv-vega[data-processed='true'],
+.mdv-root pre.mdv-vega-lite[data-processed='true'],
+.mdv-root pre.mdv-math-block[data-processed='true'],
+.mdv-root div.mdv-math-mathml[data-processed='true'],
+.mdv-root .mdv-mermaid[data-processed='true'] svg,
+.mdv-root pre.mermaid[data-processed='true'] svg,
+.mdv-root pre.mdv-graphviz[data-processed='true'] svg,
+.mdv-root pre.mdv-vega[data-processed='true'] svg,
+.mdv-root pre.mdv-vega-lite[data-processed='true'] svg,
+.mdv-root pre.mdv-math-block[data-processed='true'] svg,
+.mdv-root div.mdv-math-mathml[data-processed='true'] svg {
+  cursor: default !important;
+}
+</style>
+</head>
+<body>
+<article class="mdv-root"><div class="mdv-content"><h1 id="mit-értünk-event-loop-on-nodejs-esetén-és-mi-a-kapcsolata-az-eseményekkel">Mit értünk <code>event loop</code>-on <code>Node.js</code> esetén és mi a kapcsolata az eseményekkel?</h1>
+<p>Az <strong>Event Loop (eseményciklus)</strong> a <strong>Node.js futtatókörnyezetének központi mechanizmusa</strong>, amely folyamatosan figyeli az <strong>eseményeket (events)</strong> és az <strong>aszinkron műveletek befejeződését</strong>, majd a megfelelő időben végrehajtja a hozzájuk tartozó kódot.</p>
+<p>Egyszerűen megfogalmazva:</p>
+<blockquote>
+<p>Az <strong>esemény (event)</strong> azt jelzi, hogy <strong>valami történt</strong>, az <strong>Event Loop</strong> pedig gondoskodik arról, hogy <strong>az eseményhez tartozó eseménykezelő (event listener vagy callback) megfelelő időben lefusson</strong>.</p>
+</blockquote>
+<p>Az Event Loop és az események tehát szorosan összetartoznak.</p>
+<hr>
+<h1 id="az-esemény-és-az-event-loop-kapcsolata">Az esemény és az Event Loop kapcsolata</h1>
+<p>Képzeljük el egy étterem működését:</p>
+<ul>
+<li>Az <strong>esemény</strong> az, hogy egy vendég rendel.</li>
+<li>Az <strong>Event Loop</strong> a pincér.</li>
+<li>Az <strong>eseménykezelő</strong> pedig a szakács, aki elkészíti az ételt.</li>
+</ul>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">Vendég rendel
+      │
+      ▼
+Esemény keletkezik
+      │
+      ▼
+Event Loop észleli
+      │
+      ▼
+Meghívja az eseménykezelőt
+      │
+      ▼
+A megfelelő kód lefut
+</code></pre></div>
+<hr>
+<h1 id="mi-az-esemény">Mi az esemény?</h1>
+<p>Az esemény egy olyan jelzés, hogy valami megtörtént.</p>
+<p>Például:</p>
+<ul>
+<li>HTTP kérés érkezett.</li>
+<li>Elkészült egy fájl olvasása.</li>
+<li>Lejárt egy időzítő.</li>
+<li>Hiba történt.</li>
+<li>TCP kapcsolat létrejött.</li>
+<li>Egy stream új adatot kapott.</li>
+</ul>
+<hr>
+<h1 id="mi-az-event-loop">Mi az Event Loop?</h1>
+<p>Az Event Loop egy folyamatos ciklus.</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">while (a program fut) {
+
+    eseményeket figyel;
+
+    ha van végrehajtható callback {
+
+        végrehajtja;
+
+    }
+
+}
+</code></pre></div>
+<p>Természetesen a Node.js belső működése ennél jóval összetettebb, de az alapelv ez.</p>
+<hr>
+<h1 id="példa-1-egyszerű-esemény">Példa 1 – Egyszerű esemény</h1>
+<div class="mdv-code-block" data-mdv-highlighted="1" data-lang="JavaScript"><pre data-mdv-highlighted="1" data-lang="JavaScript"><code class="language-javascript"><span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span> <span class="token maybe-class-name">EventEmitter</span> <span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'node:events'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> emitter <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">EventEmitter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+emitter<span class="token punctuation">.</span><span class="token method function property-access">on</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Hello!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+emitter<span class="token punctuation">.</span><span class="token method function property-access">emit</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+<p>Kimenet:</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">Hello!
+</code></pre></div>
+<p>Mi történik?</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">emit("hello")
+      │
+      ▼
+"hello" esemény keletkezik
+      │
+      ▼
+Event Loop
+      │
+      ▼
+on("hello") callback
+      │
+      ▼
+console.log()
+</code></pre></div>
+<hr>
+<h1 id="példa-2-időzítő">Példa 2 – Időzítő</h1>
+<div class="mdv-code-block" data-mdv-highlighted="1" data-lang="JavaScript"><pre data-mdv-highlighted="1" data-lang="JavaScript"><code class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Start'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Timer'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'End'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+<p>Kimenet:</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">Start
+End
+Timer
+</code></pre></div>
+<h3 id="mi-történik">Mi történik?</h3>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">console.log(Start)
+        │
+        ▼
+kiírja
+
+setTimeout(...)
+        │
+        ▼
+Node.js időzítőt indít
+
+console.log(End)
+        │
+        ▼
+kiírja
+
+1 másodperc letelik
+        │
+        ▼
+Timer esemény
+        │
+        ▼
+Event Loop
+        │
+        ▼
+callback lefut
+</code></pre></div>
+<hr>
+<h1 id="példa-3-fájl-olvasása">Példa 3 – Fájl olvasása</h1>
+<div class="mdv-code-block" data-mdv-highlighted="1" data-lang="JavaScript"><pre data-mdv-highlighted="1" data-lang="JavaScript"><code class="language-javascript"><span class="token keyword module">import</span> <span class="token imports">fs</span> <span class="token keyword module">from</span> <span class="token string">'node:fs'</span><span class="token punctuation">;</span>
+
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+fs<span class="token punctuation">.</span><span class="token method function property-access">readFile</span><span class="token punctuation">(</span><span class="token string">'hello.txt'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'3'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+<p>Kimenet:</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">1
+3
+2
+</code></pre></div>
+<p>Mi történik?</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">readFile()
+      │
+      ▼
+Node.js elkezdi olvasni a fájlt
+
+A JavaScript tovább fut
+
+↓
+
+A fájl elkészül
+
+↓
+
+File Read esemény
+
+↓
+
+Event Loop
+
+↓
+
+Callback lefut
+</code></pre></div>
+<hr>
+<h1 id="példa-4-http-kérés">Példa 4 – HTTP kérés</h1>
+<div class="mdv-code-block" data-mdv-highlighted="1" data-lang="JavaScript"><pre data-mdv-highlighted="1" data-lang="JavaScript"><code class="language-javascript"><span class="token keyword module">import</span> <span class="token imports">http</span> <span class="token keyword module">from</span> <span class="token string">'node:http'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token method function property-access">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Új kérés'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    res<span class="token punctuation">.</span><span class="token method function property-access">end</span><span class="token punctuation">(</span><span class="token string">'Hello'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+server<span class="token punctuation">.</span><span class="token method function property-access">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+<p>Amikor valaki megnyitja:</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">http://localhost:3000
+</code></pre></div>
+<p>akkor:</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">HTTP kérés
+      │
+      ▼
+request esemény
+      │
+      ▼
+Event Loop
+      │
+      ▼
+callback lefut
+</code></pre></div>
+<hr>
+<h1 id="példa-5-saját-esemény">Példa 5 – Saját esemény</h1>
+<div class="mdv-code-block" data-mdv-highlighted="1" data-lang="JavaScript"><pre data-mdv-highlighted="1" data-lang="JavaScript"><code class="language-javascript"><span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span> <span class="token maybe-class-name">EventEmitter</span> <span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'node:events'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> emitter <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">EventEmitter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+emitter<span class="token punctuation">.</span><span class="token method function property-access">on</span><span class="token punctuation">(</span><span class="token string">'save'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Mentés kész.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Program indul'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+emitter<span class="token punctuation">.</span><span class="token method function property-access">emit</span><span class="token punctuation">(</span><span class="token string">'save'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Program vége'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+<p>Kimenet:</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">Program indul
+Mentés kész.
+Program vége
+</code></pre></div>
+<hr>
+<h1 id="az-event-loop-működése">Az Event Loop működése</h1>
+<p>Egyszerűsített ábra:</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">JavaScript kód
+       │
+       ▼
+Call Stack
+       │
+       ▼
+Aszinkron művelet
+       │
+       ▼
+Node.js API
+       │
+       ▼
+Esemény keletkezik
+       │
+       ▼
+Event Queue
+       │
+       ▼
+Event Loop
+       │
+       ▼
+Callback végrehajtása
+</code></pre></div>
+<hr>
+<h1 id="a-call-stack-szerepe">A Call Stack szerepe</h1>
+<p>Az Event Loop csak akkor tud új callbacket futtatni, ha a Call Stack üres.</p>
+<p>Példa:</p>
+<div class="mdv-code-block" data-mdv-highlighted="1" data-lang="JavaScript"><pre data-mdv-highlighted="1" data-lang="JavaScript"><code class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'A'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'B'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'C'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+<p>Kimenet:</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">A
+C
+B
+</code></pre></div>
+<p>A <code>setTimeout(..., 0)</code> nem azt jelenti, hogy a callback azonnal lefut, hanem azt, hogy <strong>legkorábban</strong> akkor hajtható végre, amikor:</p>
+<ul>
+<li>letelt a megadott idő,</li>
+<li>és a Call Stack már üres.</li>
+</ul>
+<hr>
+<h1 id="az-event-loop-főbb-fázisai">Az Event Loop főbb fázisai</h1>
+<p>A Node.js Event Loop több fázison halad végig.</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">┌──────────────────────┐
+│ Timers               │
+├──────────────────────┤
+│ Pending Callbacks    │
+├──────────────────────┤
+│ Poll                 │
+├──────────────────────┤
+│ Check                │
+├──────────────────────┤
+│ Close Callbacks      │
+└──────────────────────┘
+</code></pre></div>
+<p>A legfontosabbak:</p>
+<table>
+<thead>
+<tr>
+<th>Fázis</th>
+<th>Kezelt események</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Timers</strong></td>
+<td><code>setTimeout()</code>, <code>setInterval()</code></td>
+</tr>
+<tr>
+<td><strong>Poll</strong></td>
+<td>fájlműveletek, hálózati I/O</td>
+</tr>
+<tr>
+<td><strong>Check</strong></td>
+<td><code>setImmediate()</code></td>
+</tr>
+<tr>
+<td><strong>Close Callbacks</strong></td>
+<td>kapcsolatok lezárása</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="mi-történik-egyszerre-több-eseménynél">Mi történik egyszerre több eseménynél?</h1>
+<div class="mdv-code-block" data-mdv-highlighted="1" data-lang="JavaScript"><pre data-mdv-highlighted="1" data-lang="JavaScript"><code class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Start'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Timer'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">setImmediate</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'Immediate'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'End'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>
+<p>A <code>"Start"</code> és <code>"End"</code> mindig előbb jelenik meg. Az, hogy a <code>setImmediate()</code> vagy a <code>setTimeout()</code> callbackje fut-e le előbb, bizonyos helyzetekben a futtatási környezettől és attól függ, hogy a hívások melyik Event Loop fázisban történtek. Például egy I/O callbacken belül a <code>setImmediate()</code> jellemzően megelőzi a <code>setTimeout(..., 0)</code> callbackjét.</p>
+<hr>
+<h1 id="miért-fontos-az-event-loop">Miért fontos az Event Loop?</h1>
+<p>Ennek köszönhetően a Node.js:</p>
+<ul>
+<li>egyszerre több ezer hálózati kapcsolatot képes kezelni;</li>
+<li>nem blokkolódik fájlműveletek közben;</li>
+<li>jól skálázható webszervereket tesz lehetővé;</li>
+<li>hatékonyan használja a memóriát és a CPU-t I/O-intenzív feladatoknál.</li>
+</ul>
+<hr>
+<h1 id="mikor-akad-meg">Mikor akad meg?</h1>
+<p>Ha hosszú ideig futó, CPU-igényes JavaScript kód fut:</p>
+<div class="mdv-code-block" data-mdv-highlighted="1" data-lang="JavaScript"><pre data-mdv-highlighted="1" data-lang="JavaScript"><code class="language-javascript"><span class="token keyword control-flow">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div>
+<p>akkor:</p>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">Call Stack
+      │
+      ▼
+soha nem ürül ki
+      │
+      ▼
+Event Loop nem tud dolgozni
+      │
+      ▼
+Minden esemény várakozik
+</code></pre></div>
+<p>Ezért az ilyen feladatokat célszerű külön <strong>Worker Thread</strong> vagy külön folyamat segítségével végrehajtani.</p>
+<hr>
+<h1 id="az-esemény-és-az-event-loop-kapcsolata-1">Az esemény és az Event Loop kapcsolata</h1>
+<div class="mdv-code-block" data-mdv-highlighted="1"><pre data-mdv-highlighted="1"><code class="language-text">Valami történik
+      │
+      ▼
+Esemény (Event)
+      │
+      ▼
+Node.js eltárolja
+      │
+      ▼
+Event Loop
+      │
+      ▼
+Megkeresi a megfelelő eseménykezelőt
+      │
+      ▼
+A callback lefut
+      │
+      ▼
+A program folytatódik
+</code></pre></div>
+<hr>
+<h1 id="összefoglalás">Összefoglalás</h1>
+<p>Az <strong>esemény (event)</strong> a Node.js-ben egy jelzés arról, hogy egy művelet vagy állapotváltozás bekövetkezett, például egy fájl beolvasása befejeződött, HTTP kérés érkezett vagy lejárt egy időzítő. Az <strong>Event Loop</strong> az a mechanizmus, amely folyamatosan figyeli ezeket az eseményeket és az aszinkron műveletek eredményét, majd amikor a JavaScript végrehajtási verem (Call Stack) szabaddá válik, végrehajtja a hozzájuk tartozó callback függvényeket.</p>
+<p>Az események és az Event Loop együtt alkotják a Node.js eseményvezérelt működésének alapját. Az események jelzik, hogy valami történt, az Event Loop pedig biztosítja, hogy a megfelelő eseménykezelők a megfelelő időben fussanak le. Ennek köszönhetően a Node.js egyetlen JavaScript szál használata mellett is képes nagyszámú egyidejű I/O műveletet és hálózati kapcsolatot hatékonyan kezelni.</p>
+</div></article>
+</body>
+</html>
