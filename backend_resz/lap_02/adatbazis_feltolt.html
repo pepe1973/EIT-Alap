@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../css/adatbazis.css"
+        />
+        <title>Adatbázis feltöltése MongoDB</title>
+    </head>
+    <body>
+        <div id="adat-kontener">
+            <h1>Adatbázis feltöltése MongoDB</h1>
+            <ol>
+                <li>
+                    Módosítsuk a
+                    <span class="kiemel">Building.js</span> állományt.
+                </li>
+                <div class="kep-tarto">
+                    <img src="./doksik/kepek/kep_005.png" />
+                </div>
+                <li>
+                    Természetesen a
+                    <span class="kiemel">Server.js</span> állomány is változik.
+                </li>
+                <div class="kep-tarto">
+                    <img src="./doksik/kepek/kep_006.png" />
+                </div>
+                <div class="kep-tarto">
+                    <img src="./doksik/kepek/kep_007.png" />
+                </div>
+                <li>
+                    A következő <span class="kiemel">JSON</span> állománnyal
+                    töltsük fel az adatbázisunkat:
+                    <a
+                        href="../../FancyBuildings.buildings.json"
+                        download="FancyBuildings.buildings.json"
+                        >FancyBuildings.buildings.json</a
+                    >
+                </li>
+                <li>
+                    Ehhez nyissuk meg a
+                    <span class="kiemel">MongoDB Compass</span> asztali
+                    alkalmazásunkat az adott
+                    <span class="kiemel">cluster</span>-en és nyomjuk meg az
+                    <span class="kiemel">ADD DATA</span> gombot. Válasszuk az
+                    <span class="kiemel">Import JSON or CSV file</span> opciót:
+                </li>
+                <div class="kep-tarto">
+                    <img src="./doksik/kepek/kep_008.png" />
+                </div>
+                <li>Keressük meg az előbb letöltött állományt.</li>
+                <div class="kep-tarto">
+                    <img src="./doksik/kepek/kep_009.png" />
+                </div>
+                <li>Importáljuk be a tartalmat.</li>
+                <div class="kep-tarto">
+                    <img src="./doksik/kepek/kep_010.png" />
+                </div>
+                <li>
+                    Íme a feltöltött <span class="kiemel">collection</span>.
+                </li>
+                <div class="kep-tarto">
+                    <img src="./doksik/kepek/kep_011.png" />
+                </div>
+            </ol>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,402 @@
+[
+    {
+        "_id": {
+            "$oid": "6ac8f13ca259f9dedf0a21ea"
+        },
+        "nev": "Eiffel-torony",
+        "varos": "Párizs",
+        "orszag": "Franciaország",
+        "kontinens": "Európa",
+        "leiras": "Az Eiffel-torony Párizs egyik legismertebb jelképe, amelyet Gustave Eiffel mérnöki vállalata épített az 1889-es világkiállításra. A kovácsoltvas szerkezet egykor vitákat váltott ki, ma azonban a város látképének meghatározó eleme és népszerű kilátóhely.",
+        "epitesi_ido": 1888,
+        "latogatok_szama": 6750000,
+        "kep": "epulet_01.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:50:52.631Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:50:52.631Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f1a0a259f9dedf0a21eb"
+        },
+        "nev": "Colosseum",
+        "varos": "Róma",
+        "orszag": "Olaszország",
+        "kontinens": "Európa",
+        "leiras": "A Colosseum az ókori Róma hatalmas amfiteátruma, amelyet gladiátorjátékok és nyilvános látványosságok megrendezésére használtak. Több mint ezer év történelmi változásait élte át, és ma a római mérnöki tudás, valamint az ókori városi élet egyik legismertebb emléke.",
+        "epitesi_ido": 75,
+        "latogatok_szama": 7500000,
+        "kep": "epulet_02.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:52:32.175Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:52:32.175Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f1b2ebee027ce2328727"
+        },
+        "nev": "Tádzs Mahal",
+        "varos": "Agra",
+        "orszag": "India",
+        "kontinens": "Ázsia",
+        "leiras": "A Tádzs Mahal fehér márványból emelt mauzóleum, amelyet Sáh Dzsahán mogul uralkodó felesége, Mumtáz Mahal emlékére építtetett. Szimmetrikus kertjei, kupolája és részletgazdag kőberakásai a mogul építészet kiemelkedő példájává teszik, és a szerelem világszerte ismert jelképévé vált.",
+        "epitesi_ido": 1645,
+        "latogatok_szama": 7000000,
+        "kep": "epulet_03.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:52:50.873Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:52:50.873Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f1bfebee027ce2328728"
+        },
+        "nev": "Kínai nagy fal",
+        "varos": "Észak-Kína",
+        "orszag": "Kína",
+        "kontinens": "Ázsia",
+        "leiras": "A Kínai nagy fal különböző korszakokban épített védelmi falak és erődítések hatalmas rendszere. A legismertebb szakaszok a Ming-dinasztia idején készültek, hegygerinceken és völgyeken haladnak át. Hossza és változatos tája miatt a világ egyik legismertebb történelmi építménye.",
+        "epitesi_ido": -600,
+        "latogatok_szama": 10000000,
+        "kep": "epulet_04.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:53:03.619Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:53:03.619Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f1d7ebee027ce2328729"
+        },
+        "nev": "Sydney-i Operaház",
+        "varos": "Sydney",
+        "orszag": "Ausztrália",
+        "kontinens": "Ausztrália",
+        "leiras": "A Sydney-i Operaház jellegzetes, vitorlákat idéző tetőszerkezete a kikötő látképének meghatározó része. Jørn Utzon tervei alapján épült, és több koncertteremnek, operának, színházi előadásnak ad otthont. Modern építészeti megoldásai miatt a 20. századi építészet egyik ikonikus alkotása.",
+        "epitesi_ido": 1964,
+        "latogatok_szama": 1000000,
+        "kep": "epulet_05.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:53:27.401Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:53:27.401Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f1ebebee027ce232872a"
+        },
+        "nev": "Sagrada Família",
+        "varos": "Barcelona",
+        "orszag": "Spanyolország",
+        "kontinens": "Európa",
+        "leiras": "A Sagrada Família Antoni Gaudí katalán építész monumentális bazilikája, amely természet ihlette formáiról, részletgazdag homlokzatairól és magas tornyairól híres. Építése a 19. században kezdődött, és hosszú időn át adományokból finanszírozták. Barcelona egyik leglátogatottabb és legkülönlegesebb műemléke.",
+        "epitesi_ido": 1882,
+        "latogatok_szama": 4877567,
+        "kep": "epulet_06.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:53:47.281Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:53:47.281Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f1f7ebee027ce232872b"
+        },
+        "nev": "Burj Khalifa",
+        "varos": "Dubaj",
+        "orszag": "Egyesült Arab Emírségek",
+        "kontinens": "Ázsia",
+        "leiras": "A Burj Khalifa Dubaj belvárosának meghatározó felhőkarcolója, amely 2010-es megnyitásakor a világ legmagasabb épületévé vált. Karcsú, lépcsőzetesen emelkedő formája a sivatagi virágok és az iszlám építészet geometrikus mintái által ihletett. Kilátóteraszairól a városra és a Perzsa-öbölre nyílik panoráma.",
+        "epitesi_ido": 2006,
+        "latogatok_szama": 1700000,
+        "kep": "epulet_07.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:53:59.176Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:53:59.176Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f201ebee027ce232872c"
+        },
+        "nev": "Empire State Building",
+        "varos": "New York",
+        "orszag": "Egyesült Államok",
+        "kontinens": "Amerika",
+        "leiras": "Az Empire State Building art deco stílusú felhőkarcoló, amely a 20. század eleji New York gyors fejlődésének jelképe lett. Rövid építési ideje és jellegzetes tornya mérnöki teljesítménynek számított. Kilátóteraszai a város egyik klasszikus turistalátványosságát jelentik, az épület pedig filmekben és műalkotásokban is gyakran feltűnik.",
+        "epitesi_ido": 1930,
+        "latogatok_szama": 4000000,
+        "kep": "epulet_08.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:54:09.610Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:54:09.610Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f20debee027ce232872d"
+        },
+        "nev": "Gízai nagy piramis",
+        "varos": "Gíza",
+        "orszag": "Egyiptom",
+        "kontinens": "Afrika",
+        "leiras": "A gízai nagy piramis Hufu fáraó számára készült, és az ókori világ hét csodája közül az egyetlen fennmaradt építmény. Hatalmas mészkőtömbökből emelték, tájolása és építési pontossága ma is kutatások tárgya. A környező piramisokkal és a Szfinxszel együtt az ókori Egyiptom egyik legfontosabb emlékegyüttese.",
+        "epitesi_ido": -2600,
+        "latogatok_szama": 14000000,
+        "kep": "epulet_09.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:54:21.542Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:54:21.542Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f21bebee027ce232872e"
+        },
+        "nev": "Parthenón",
+        "varos": "Athén",
+        "orszag": "Görögország",
+        "kontinens": "Európa",
+        "leiras": "A Parthenón az athéni Akropolisz klasszikus görög temploma, amelyet Athéné istennő tiszteletére emeltek. Márványoszlopai, arányrendszere és szobrászati díszítése a klasszikus görög építészet kiemelkedő példája. Az évszázadok során vallási épületként, majd más célokra is használták, ma pedig a görög kulturális örökség szimbóluma.",
+        "epitesi_ido": -440,
+        "latogatok_szama": 7000000,
+        "kep": "epulet_10.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:54:35.799Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:54:35.799Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f226ebee027ce232872f"
+        },
+        "nev": "Tower Bridge",
+        "varos": "London",
+        "orszag": "Egyesült Királyság",
+        "kontinens": "Európa",
+        "leiras": "A Tower Bridge a Temzén átívelő, viktoriánus kori felnyitható híd, amely két neogótikus tornyáról ismerhető fel. Megépítését a londoni kikötő forgalmának növekedése tette szükségessé, ezért középső szakasza a nagy hajók áthaladásához felnyitható. A híd ma is közlekedési útvonal és népszerű városi látványosság.",
+        "epitesi_ido": 1886,
+        "latogatok_szama": 800000,
+        "kep": "epulet_11.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:54:46.985Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:54:46.985Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f240ebee027ce2328730"
+        },
+        "nev": "Versailles-i kastély",
+        "varos": "Versailles",
+        "orszag": "Franciaország",
+        "kontinens": "Európa",
+        "leiras": "A Versailles-i kastély XIV. Lajos francia király udvarának központjává vált, és a királyi hatalom, a barokk művészet és a reprezentáció jelképe. Híres Tükörterme, díszes termei és gondosan megtervezett kertjei a korabeli udvari élet pompáját mutatják be. A kastély és parkja ma jelentős történelmi és kulturális örökség.",
+        "epitesi_ido": 1661,
+        "latogatok_szama": 8000000,
+        "kep": "epulet_12.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:55:12.537Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:55:12.537Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f24aebee027ce2328731"
+        },
+        "nev": "Tiltott Város",
+        "varos": "Peking",
+        "orszag": "Kína",
+        "kontinens": "Ázsia",
+        "leiras": "A pekingi Tiltott Város évszázadokon át a kínai császárok palotakomplexuma és a birodalmi hatalom központja volt. Vörös falai, aranysárga tetői, szigorú tengelyes elrendezése és hatalmas udvarai a hagyományos kínai palotaépítészet jellegzetességeit mutatják. Ma Palotamúzeumként működik, rendkívül gazdag történelmi gyűjteménnyel.",
+        "epitesi_ido": 1410,
+        "latogatok_szama": 17000000,
+        "kep": "epulet_13.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:55:22.225Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:55:22.225Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f255ebee027ce2328733"
+        },
+        "nev": "Hagia Sophia",
+        "varos": "Isztambul",
+        "orszag": "Törökország",
+        "kontinens": "Európa",
+        "leiras": "A Hagia Sophia monumentális kupolájáról és különleges építészeti megoldásairól ismert épület, amelyet Justinianus császár idején emeltek. Története során keresztény bazilikaként, mecsetként, múzeumként, majd ismét mecsetként működött. Belső terében bizánci mozaikok és az oszmán korszak elemei együtt őrzik a város sokrétegű történelmét.",
+        "epitesi_ido": 534,
+        "latogatok_szama": 6250000,
+        "kep": "epulet_14.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:55:33.352Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:55:33.352Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f261ebee027ce2328734"
+        },
+        "nev": "Szent Péter-bazilika",
+        "varos": "Vatikánváros",
+        "orszag": "Vatikán",
+        "kontinens": "Európa",
+        "leiras": "A Szent Péter-bazilika a katolikus világ egyik legfontosabb temploma, a Vatikán központi épülete. Építésében olyan mesterek vettek részt, mint Bramante, Michelangelo és Bernini; hatalmas kupolája uralja a városképet. A bazilika a reneszánsz és barokk művészet kiemelkedő alkotásait őrzi, és zarándokok millióit fogadja.",
+        "epitesi_ido": 1550,
+        "latogatok_szama": 11000000,
+        "kep": "epulet_15.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:55:45.192Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:55:45.192Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f2adebee027ce2328735"
+        },
+        "nev": "Machu Picchu",
+        "varos": "Cusco régió",
+        "orszag": "Peru",
+        "kontinens": "Amerika",
+        "leiras": "Machu Picchu az Andok magaslatai között fekvő inka város, amely teraszos lejtőiről, kőépítményeiről és lenyűgöző hegyi környezetéről híres. Valószínűleg a 15. században épült, és a spanyol hódítás idején elnéptelenedett. A gondosan illesztett kövek és a tájhoz igazodó városszerkezet az inka mérnöki tudásról tanúskodnak.",
+        "epitesi_ido": 1430,
+        "latogatok_szama": 1500000,
+        "kep": "epulet_16.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:57:01.196Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:57:01.196Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f2b2ebee027ce2328736"
+        },
+        "nev": "Petronas ikertornyok",
+        "varos": "Kuala Lumpur",
+        "orszag": "Malajzia",
+        "kontinens": "Ázsia",
+        "leiras": "A Petronas ikertornyok Kuala Lumpur modern városképének jelképei, amelyeket a malajziai kultúra geometrikus motívumai ihlettek. A két torony között magasban elhelyezett híd köti össze az épületeket, és különleges látványt nyújt a város fölött. Megépítésükkor a világ legmagasabb ikertornyai közé emelkedtek, ma irodáknak és látogatói tereknek adnak otthont.",
+        "epitesi_ido": 1996,
+        "latogatok_szama": 1000000,
+        "kep": "epulet_17.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:57:06.894Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:57:06.894Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f2bdebee027ce2328737"
+        },
+        "nev": "Neuschwanstein kastély",
+        "varos": "Schwangau",
+        "orszag": "Németország",
+        "kontinens": "Európa",
+        "leiras": "A Neuschwanstein kastély II. Lajos bajor király megrendelésére épült, és romantikus tornyaival, hegyvidéki fekvésével mesebeli látványt nyújt. Középkori várakat idéző külseje mögött a 19. század technikai megoldásai és díszes belső terek találhatók. A kastély a romantika és a királyi fantázia egyik legismertebb európai jelképe.",
+        "epitesi_ido": 1875,
+        "latogatok_szama": 1400000,
+        "kep": "epulet_18.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:57:17.384Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:57:17.384Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f2c8ebee027ce2328738"
+        },
+        "nev": "Marina Bay Sands",
+        "varos": "Szingapúr",
+        "orszag": "Szingapúr",
+        "kontinens": "Ázsia",
+        "leiras": "A Marina Bay Sands három magas szállodatornyából és az azokat összekötő, hajó formájú tetőszerkezetből áll. A komplexum szállodát, üzleteket, éttermeket, konferenciatermeket és kilátóhelyeket foglal magában. Jellegzetes sziluettje Szingapúr modern építészetének egyik legismertebb jelképe, és a város turisztikai negyedének fontos központja.",
+        "epitesi_ido": 2008,
+        "latogatok_szama": 8000000,
+        "kep": "epulet_19.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:57:28.783Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:57:28.783Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6ac8f2d4ebee027ce232873a"
+        },
+        "nev": "Megváltó Krisztus szobra",
+        "varos": "Rio de Janeiro",
+        "orszag": "Brazília",
+        "kontinens": "Amerika",
+        "leiras": "A Megváltó Krisztus szobra a Corcovado-hegy tetején áll, kitárt karjaival Rio de Janeiro és a környező öböl fölé magasodik. Vasbetonból és szappankő borítással készült, és a város, valamint Brazília egyik legismertebb jelképe. A monumentális szobor vallási jelentősége mellett a modern világ ikonikus látványosságává vált.",
+        "epitesi_ido": 1928,
+        "latogatok_szama": 2000000,
+        "kep": "epulet_20.jpg",
+        "createdAt": {
+            "$date": "2026-10-09T13:57:40.216Z"
+        },
+        "updatedAt": {
+            "$date": "2026-10-09T13:57:40.216Z"
+        },
+        "__v": 0
+    }
+]
