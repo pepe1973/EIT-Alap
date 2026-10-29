@@ -1,0 +1,105 @@
+@import url('./css/valtozok.css');
+@import url('./css/korok-tarto.css');
+
+* {
+    font-family: var(--rubik);
+    /* user-select: none; */
+}
+
+body {
+    font-family: var(--rubik);
+}
+
+#tarto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    height: 100vh;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    width: 100%;
+}
+
+#bal-tarto {
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    overflow-y: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+#bal-tarto ol {
+    list-style-position: inside;
+}
+
+#bal-tarto ol li {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+#bal-tarto .nyil {
+    color: green;
+    display: inline-block;
+    margin: 0px 5px;
+    width: 20px;
+}
+
+#jobb-tarto {
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#jobb-tarto iframe {
+    border: none;
+    height: 100%;
+}
+
+#nyilak-tarto {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    justify-content: center;
+    width: 100%;
+}
+
+.nyil-tarto {
+    width: 30px;
+}
+
+.nyil-tarto img {
+    width: 100%;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.kiemel {
+    color: red;
+    font-weight: bold;
+}
+
+#feladat-tarto {
+    border: 1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.kep-tarto img {
+    max-width: 100%;
+}

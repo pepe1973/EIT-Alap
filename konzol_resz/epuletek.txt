@@ -1,0 +1,57 @@
+épület_neve;hely_város;hely_ország;látogatók_éves_száma;belépő_díj_forintban;van_e_kedvezmény
+Országház;Budapest;Magyarország;800000;12000;true
+Halászbástya;Budapest;Magyarország;700000;4000;true
+Budai Vár;Budapest;Magyarország;1500000;6000;true
+Szent István-bazilika;Budapest;Magyarország;900000;3500;true
+Mátyás-templom;Budapest;Magyarország;500000;3500;true
+Vajdahunyad vára;Budapest;Magyarország;450000;3000;true
+Magyar Nemzeti Múzeum;Budapest;Magyarország;350000;5000;true
+Műcsarnok;Budapest;Magyarország;180000;4500;true
+Gresham-palota;Budapest;Magyarország;120000;0;false
+Nagyvásárcsarnok;Budapest;Magyarország;800000;0;false
+Debreceni Nagytemplom;Debrecen;Magyarország;160000;1500;true
+Református Kollégium;Debrecen;Magyarország;90000;2000;true
+Egri vár;Eger;Magyarország;350000;4200;true
+Egri bazilika;Eger;Magyarország;140000;0;false
+Esztergomi bazilika;Esztergom;Magyarország;400000;2500;true
+Pannonhalmi Főapátság;Pannonhalma;Magyarország;120000;3500;true
+Szegedi dóm;Szeged;Magyarország;220000;1800;true
+Reök-palota;Szeged;Magyarország;60000;2500;true
+Győri bazilika;Győr;Magyarország;100000;0;false
+Tűztorony;Sopron;Magyarország;80000;1200;true
+Siklósi vár;Siklós;Magyarország;90000;2500;true
+Visegrádi Fellegvár;Visegrád;Magyarország;300000;2500;true
+Diósgyőri vár;Miskolc;Magyarország;180000;3000;true
+Kecskeméti városháza;Kecskemét;Magyarország;70000;0;false
+Pécsi székesegyház;Pécs;Magyarország;190000;2000;true
+Zsolnay-mauzóleum;Pécs;Magyarország;50000;1800;true
+Királyi palota;Gödöllő;Magyarország;250000;4500;true
+Tatai vár;Tata;Magyarország;75000;1800;true
+Sümegi vár;Sümeg;Magyarország;130000;3500;true
+Festetics-kastély;Keszthely;Magyarország;280000;5000;true
+Hősök tere épületegyüttese;Budapest;Magyarország;1100000;0;false
+Magyar Állami Operaház;Budapest;Magyarország;500000;9000;true
+Bécsi Szent István-székesegyház;Bécs;Ausztria;6000000;0;false
+Schönbrunni kastély;Bécs;Ausztria;4000000;11000;true
+Belvedere-palota;Bécs;Ausztria;1500000;9000;true
+Brandenburgi kapu;Berlin;Németország;4000000;0;false
+Reichstag épülete;Berlin;Németország;3000000;0;false
+Kölni dóm;Köln;Németország;6000000;0;false
+Neuschwanstein kastély;Schwangau;Németország;1400000;9000;true
+Eiffel-torony;Párizs;Franciaország;6000000;12000;true
+Louvre-palota;Párizs;Franciaország;9000000;8000;true
+Notre-Dame-székesegyház;Párizs;Franciaország;12000000;0;false
+Versailles-i kastély;Versailles;Franciaország;8000000;10000;true
+Colosseum;Róma;Olaszország;7500000;7000;true
+Szent Péter-bazilika;Vatikánváros;Vatikán;11000000;0;false
+Milánói dóm;Milánó;Olaszország;6000000;5000;true
+Pisai ferde torony;Pisa;Olaszország;1000000;8000;true
+Akropolisz;Athén;Görögország;3000000;5000;true
+Parthenón;Athén;Görögország;2500000;0;false
+Hagia Sophia;Isztambul;Törökország;3500000;0;false
+Kék mecset;Isztambul;Törökország;5000000;0;false
+Tower of London;London;Egyesült Királyság;3000000;16000;true
+Buckingham-palota;London;Egyesült Királyság;600000;12000;true
+Big Ben (Elizabeth Tower);London;Egyesült Királyság;1000000;0;false
+Sagrada Família;Barcelona;Spanyolország;4500000;9000;true
+Alhambra;Granada;Spanyolország;2500000;7000;true
